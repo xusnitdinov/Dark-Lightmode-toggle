@@ -1,0 +1,35 @@
+body{
+    background-color: white;
+    color: black;
+}
+body.dark-mode{
+    background-color: black;
+    color: white;
+}
+@keyframes glow{
+    0% {
+        box-shadow: 0 0 5px #00d2ff;
+    }
+    50%{
+        box-shadow: 0 0 20px #00d2ff; transform: scale(1.05);
+    }
+    100%{
+        box-shadow: 0 0 5px #00d2ff;
+    }
+}
+.animate-glow{
+    animation: glow 0.5s ease-in-out;
+}
+#btn-clr{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: black 1px solid;
+}
+#btn-clr:hover{
+    background-color: lightgray;
+}
+#btn-clr:active{
+    transform: scale(0.98);
+}
